@@ -1,0 +1,10 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.header-image {
+  background-image: url("/images/header.jpg");
+  background-size: cover;
+  height: 400px;
+}// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
