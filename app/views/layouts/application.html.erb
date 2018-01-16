@@ -4,7 +4,7 @@
   <title>Codaisseurup</title>
   <%= csrf_meta_tags %>
 
-  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
 </head>
 
@@ -15,8 +15,15 @@
     <p class="alert"><%= alert %></p>
 
     <div class="container">
-      <h1>Events</h1>
-      <h5>Look at our amazing events you can join!</h5>
+      <div class="header-title">
+        <h1>Awesome Events</h1>
+      </div>
+      <br>
+      <div class="header-subtitle">
+        <h5>Look at our amazing events you can join!</h5>
+      </div>
+      <br>
+      <button class="btn btn-success btn-lg">View Events</button>
     </div>
   </div>
 
