@@ -4,4 +4,6 @@ FactoryBot.define do
     last_name   { Faker::Name.last_name }
     bio         { Faker::Lorem.sentence }
   end
+
+
 end
