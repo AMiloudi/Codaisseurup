@@ -4,12 +4,11 @@ class EventsController < ApplicationController
 
   def index
     @events = current_user.events
-    @events = @event.categories
-    @photos = @event.photos
   end
 
   def show
     @categories = @event.categories
+    @photos = @event.photos
   end
 
   def new
@@ -33,7 +32,7 @@ class EventsController < ApplicationController
     if current_user.id == @event.user.id
       @photos = @event.photos
     else
-      redirect_to root_path, notice: "You don't have permission."
+      redirect_to root_path, notice: "You do not have permission."
     end
   end
 
@@ -63,7 +62,7 @@ class EventsController < ApplicationController
     params[:images].present? ? params.require(:images) : []
   end
 
-  
+
   def set_event
     @event = Event.find(params[:id])
   end
