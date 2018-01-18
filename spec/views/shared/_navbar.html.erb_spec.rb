@@ -6,6 +6,7 @@ describe "shared/_navbar.html.erb" do
     let(:user) { create:user }
 
     it "page has log in and sign up links" do
+    visit root_url
     expect(page).to have_link('Log In', href: new_user_session_path)
     expect(page).to have_link('Sign Up', href: new_user_registration_path)
     end
