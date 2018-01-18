@@ -29,19 +29,21 @@ ActiveRecord::Schema.define(version: 20180118104443) do
   end
 
   create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.string "string"
     t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id"
+    t.boolean "has_lunch"
     t.string "location"
     t.decimal "price", default: "0.0"
     t.integer "capacity"
-    t.boolean "active", default: true
-    t.string "name"
     t.boolean "includes_foods", default: false
     t.boolean "includes_drinks", default: false
     t.datetime "starts_at"
     t.datetime "ends_at"
+    t.boolean "active", default: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
     t.index ["user_id"], name: "index_events_on_user_id"
   end
 
