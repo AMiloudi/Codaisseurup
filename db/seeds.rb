@@ -1,7 +1,8 @@
+Profile.destroy_all
+Registration.destroy_all
 Photo.destroy_all
 Category.destroy_all
 Event.destroy_all
-Profile.destroy_all
 User.destroy_all
 
 
@@ -73,3 +74,8 @@ photo3 = Photo.create!(remote_image_url:"http://res.cloudinary.com/amiloudi/imag
 photo4 = Photo.create!(remote_image_url:"http://res.cloudinary.com/amiloudi/image/upload/v1516272564/foodanddrinks_cm8myb.jpg", event: event2)
 photo5 = Photo.create!(remote_image_url:"http://res.cloudinary.com/amiloudi/image/upload/v1516272564/film_oo4iam.png", event: event3)
 photo6 = Photo.create!(remote_image_url:"http://res.cloudinary.com/amiloudi/image/upload/v1516272579/tech_xkz4tb.jpg", event: event3)
+
+
+Registration.create!()
+Registration.create!()
+Registration.create!()
